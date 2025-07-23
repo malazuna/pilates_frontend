@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.hero {
+  background: url('banner.jpg') no-repeat center center;
+  background-size: cover;
+  height:110vh;
+  position:relative;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+}
+
+.content {
+  z-index: 1;
+}
+
+.logo {
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px 30px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+/* Join the Flow Section */
+.join-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.join-heading {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.join-heading .italic {
+  font-style: italic;
+  font-weight: lighter;
+  font-family: 'Cursive', 'Pacifico', cursive; /* change if you have custom font */
+}
+
+.join-text {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Journey Section */
+.journey-section {
+  background-color: #d9ccbc;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.journey-heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.journey-heading .italic {
+  font-style: italic;
+  font-family: 'Pacifico', cursive;
+}
+
+.journey-subtext {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.journey-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.journey-btn {
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #222;
+  font-size: 16px;
+  transition: all 0.3s;
+  flex: 0 0 auto; /* Do not grow or shrink */
+  text-align: center;
+}
+
+
+
+.btn-cream {
+  background-color: #f7f0e9;
+}
+
+.btn-peach {
+  background-color: #f8e7d6;
+}
+
+.btn-mint {
+  background-color: #e7f0e4;
+}
+
+.btn-lightmint {
+  background-color: #e6f1ea;
+}
+
+.btn-lightgray {
+  background-color: #e0e4dd;
+}
+
+.journey-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.cta-main {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.cta-main:hover {
+  background-color: #333;
+}
+
+
+     
+    body {
+      margin: 0;
+      background-color: var(--bg-color);
+      font-family: var(--font-primary);
+      color: var(--text-color-dark);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .download-section {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      align-items: center;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    /* Phone mockup container */
+    .phone-container {
+      flex: 1 1 280px;
+      max-width: 300px;
+      display: flex;
+      justify-content: center;
+      perspective: 1000px;
+    }
+
+    .phone-image {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      border-radius: 36px;
+      box-shadow: 5px 10px 20px rgb(60 60 60 / 0.15);
+      transform-style: preserve-3d;
+      transform: rotateY(-20deg);
+      background:
+        linear-gradient(to top, #111 20%, #222 60%, #111 95%);
+    }
+    .phone-image::before {
+      content: "";
+      display: block;
+      padding-top: 220%; /* phone shape height ratio */
+    }
+
+    /* Content container */
+    .text-container {
+      flex: 2 1 400px;
+      max-width: 600px;
+    }
+
+    .headline {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin: 0 0 6px 0;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .headline .italic {
+      font-family: 'Dancing Script', cursive;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.8rem;
+      vertical-align: middle;
+      color: var(--text-color-dark);
+      margin-left: 6px;
+      user-select: none;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: var(--text-color-dark);
+      margin-bottom: 20px;
+      user-select: none;
+    }
+
+    .availability {
+      font-weight: 400;
+      font-size: 1rem;
+      margin-bottom: 32px;
+      color: var(--text-color-dark);
+      user-select: none;
+    }
+
+    /* Buttons container */
+    .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 12px 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+      user-select: none;
+    }
+
+    /* Apple Store button - dark filled */
+    .btn-apple {
+      background-color: var(--btn-bg-dark);
+      color: var(--btn-text-light);
+      border: 1.5px solid var(--btn-bg-dark);
+    }
+    .btn-apple:hover,
+    .btn-apple:focus {
+      background-color: #2b2b2b;
+      border-color: #2b2b2b;
+      outline: none;
+    }
+
+    /* Google Play button - outlined */
+    .btn-google {
+      background-color: transparent;
+      color: var(--text-color-dark);
+      border: 1.5px solid var(--btn-border-dark);
+    }
+    .btn-google:hover,
+    .btn-google:focus {
+      background-color: var(--btn-border-dark);
+      color: var(--btn-text-light);
+      outline: none;
+    }
+
+    /* Icon styles */
+    .btn-icon {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 720px) {
+      .download-section {
+        flex-direction: column;
+        max-width: 90vw;
+        padding: 0 12px;
+      }
+      .phone-container {
+        max-width: 220px;
+        margin-bottom: 24px;
+        transform-style: flat;
+      }
+      .phone-image {
+        transform: none;
+        border-radius: 28px;
+      }
+      .text-container {
+        max-width: 100%;
+        text-align: center;
+      }
+      .headline {
+        font-size: 2.2rem;
+      }
+      .headline .italic {
+        font-size: 2.4rem;
+      }
+      .buttons {
+        justify-content: center;
+      }
+    }
+
