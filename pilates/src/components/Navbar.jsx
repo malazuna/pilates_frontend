@@ -2,10 +2,11 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'About Us', href: '#', current: false },
+  { name: 'Our Courses', href: '#', current: false },
+  { name: 'Gallery', href: '#', current: false },
+  { name: 'Contact Us', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -30,11 +31,11 @@ function Navbar() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto"
+                src="https://static.vecteezy.com/system/resources/previews/017/494/096/non_2x/letter-o-fitness-gym-logo-design-fitness-club-exercising-logo-free-vector.jpg"
+                className="h-10 w-auto"
               />
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden sm:ml-6 sm:block items-center justify-between">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
                   <a
